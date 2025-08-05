@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)http://127.0.0.1:5500/chatvista.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Chat Vista Alegre
+        </title>
+        <style>
+            h1{
+                text-align: center;
+                font-family:"Brush Script MT", cursive;
+                color: black;
+            }
+
+            p{
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: black;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                /* Fundo com imagem de favela colorida */
+                background: url('https://img.freepik.com/premium-vector/playful-favela-doodle-vector-art-illustration-with-bold-colors-graffiti-white-background_992796-629.jpg?w=2000') no-repeat center center fixed;
+                background-size: cover;
+                margin: 0;
+                min-height: 100vh;
+            }
+
+            .container {
+                width: 300px;
+                margin: 40px auto 0 auto;
+                padding: 20px;
+                background-color: rgba(255,255,255,0.93);
+                border: 1px solid #ccc;
+                border-radius: 14px;
+                box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+                position: relative;
+                z-index: 2;
+            }   
+
+            input[type="text"],
+            input[type="password"] {
+                width: 90%;
+                padding: 10px;
+                margin-bottom: 16px;
+                border: 1px solid #ccc;
+                border-radius: 6px;
+                font-size: 1em;
+            }
+
+            button[type="submit"] {
+                width: 100%;
+                padding: 10px;
+                background-color: #007bff;
+                color: #fff;
+                border: none;
+                border-radius: 6px;
+                font-size: 1em;
+                cursor: pointer;
+                transition: background 0.2s;
+            }   
+
+            button[type="submit"]:hover {
+                background-color: #ffc107;
+                color: #222;
+            }
+
+            .logo-img {
+                display: block;
+                margin: 40px auto 20px auto;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+                z-index: 2;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="text-align: center;">
+            <img src="./Chat Vista Alegre_files/vistaalegre.jpg.jpg" alt="vista alegre" width="340" height="300" class="logo-img">
+        </div>
+
+        <div class="container">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="E-mail" aria-label="E-mail">
+                <input type="password" placeholder="Senha" aria-label="Senha">
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+
+        <script>
+            alert("bem vindo");
+            prompt("digite seu nome");
+        </script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
